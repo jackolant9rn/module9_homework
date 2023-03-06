@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Модуль 9. Задание 3</title>
+</head>
+<body>
+    <header>
+        <h1>Модуль 9. Задание 3</h1>
+    </header>
+    <main>
+        <h2>Введите число:</h2>
+        <p>
+            <b>Примечание:</b> в input можно ввести любое число. При клике на кнопку произойдет следующее:
+            <ul>
+                <li>
+                    Если число не попадает в диапазон от 1 до 10 — появится текст <span class='error'>"Число вне диапазона от 1 до 10!"</span>
+                </li>
+                <li>
+                    Если число попадает в диапазон от 1 до 10 — будет выведено соответствующее числу количество картинок с сайта https://picsum.photos
+                </li>
+                <li>
+                    Дополнительная проверка: если введено не число — появится текст <span class='error'>"Введено не число!"</span>
+                </li>
+            </ul>
+        </p>
+        <input type='number'>
+        <button class='button'>Выполнить запрос</button>
+        <div class='result'>Здесь будет результат выполнения запроса</div>
+        <script src='script.js'></script>
+    </main>
+</body>

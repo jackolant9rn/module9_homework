@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Модуль 9. Задание 4</title>
+</head>
+<body>
+    <header>
+        <h1>Модуль 9. Задание 4</h1>
+    </header>
+    <main>
+        <h2>Введите числа:</h2>
+        <p>
+            <b>Примечание:</b> В input можно ввести любое число. При клике на кнопку происходит следующее:
+            <ul>
+                <li>
+                    Если оба числа не попадают в диапазон от 100 до 300 или введено не число — ниже будет выведен текст <span class='error'>«Одно из чисел вне диапазона от 100 до 300!»</span>;
+                </li>
+                <li>
+                    Если числа попадают в диапазон от 100 до 300 — будет сделан запрос c помощью fetch по URL https://picsum.photos/x/y, где x — ширина картинки, y — высота <br>
+                    После получения данных картинка будет выведена ниже на экран.
+                </li>
+            </ul>
+        </p>
+        <input type='number' id='x'>
+        <input type='number' id='y'>
+        <button class='button'>Submit</button>
+        <div class='result'>Здесь будет результат выполнения запроса</div>
+        <script src='script.js'></script>
+    </main>
+</body>

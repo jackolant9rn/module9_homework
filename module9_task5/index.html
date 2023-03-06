@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Модуль 9. Задание 5</title>
+</head>
+<body>
+    <header>
+        <h1>Модуль 9. Задание 5</h1>
+    </header>
+    <main>
+        <h2>Введите числа:</h2>
+        <p>
+            <b>Примечание:</b> В input можно ввести любое число. При клике на кнопку происходит следующее:
+            <ul>
+                <li>
+                    Если число в первом input не попадает в диапазон от 1 до 10 или не является числом — выводить ниже текст <span class='error'>«Номер страницы вне диапазона от 1 до 10»</span>;
+                </li>
+                <li>
+                    Если число во втором input не попадает в диапазон от 1 до 10 или не является числом — выводить ниже текст <span class='error'>«Лимит вне диапазона от 1 до 10»</span>;
+                </li>
+                <li>
+                    Если и первый, и второй input не в диапазонах или не являются числами — выводить ниже текст <span class='error'>«Номер страницы и лимит вне диапазона от 1 до 10»</span>;
+                </li>
+                <li>
+                    Если числа попадают в диапазон от 1 до 10 — делается запрос по URL https://picsum.photos/v2/list?page=1&limit=10, <br>
+                    где GET-параметр page — это число из первого input, а GET-параметр limit — это введённое число второго input. <br>
+                    После получения данных картинки выводятся на экран.
+                </li>
+                <li>
+                    При перезагрузке страницы показываются картинки из последнего успешно выполненного запроса
+                </li>
+            </ul>
+        </p>
+        <label for='page'>Номер страницы:</label>
+        <input type='number' id='page'>
+        <label for='limit'>Лимит:</label>
+        <input type='number' id='limit'>
+        <button class='button'>Запрос</button>
+        <div class='result'>Здесь будет результат выполнения запроса</div>
+        <script src='script.js'></script>
+    </main>
+</body>
